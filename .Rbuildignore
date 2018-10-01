@@ -1,0 +1,9 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^.*\.tmp$
+^.*\.Rmd$
+^.*\.html$
+^.*\.yml$
+^.*\.perm$
+^cran-comments\.md$
+LICENSE
