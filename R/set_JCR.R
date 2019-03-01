@@ -31,15 +31,15 @@
 #'
 #' @export
 
-set_JCR <- function(lattes.list, JCR.file, min.IF, alias.list){
+set_JCR <- function(lattes.list, JCR.file, min.IF, alias.list, sep = ";"){
 
   # read JCR file
   JCR <- utils::read.csv(JCR.file,
-                         header = TRUE, sep = ";",
+                         header = TRUE, sep = sep,
                          encoding = "UTF-8",
                          stringsAsFactors = FALSE)
   invisible(utils::capture.output(aliases <- utils::read.csv(alias.list,
-                                                             header = TRUE, sep = ";",
+                                                             header = TRUE, sep = sep,
                                                              encoding = "UTF-8",
                                                              stringsAsFactors = FALSE)))
 

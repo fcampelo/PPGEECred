@@ -32,11 +32,11 @@
 #'
 #' @export
 
-set_qualis <- function(lattes.list, qualis.file, which.qualis){
+set_qualis <- function(lattes.list, qualis.file, which.qualis, sep = ";"){
 
   # read qualis file
   qualis <- utils::read.csv(qualis.file,
-                            header = TRUE, sep = ",",
+                            header = TRUE, sep = sep,
                             encoding = "UTF-8",
                             stringsAsFactors = FALSE)
 
